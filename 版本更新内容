@@ -1,1 +1,19 @@
-test
+{
+  "version": "2.3.1",
+  "content": "✨ 更新内容 ✨\n\n· 版本号链接按纠正改为 ID，更稳定\n· 反代返回 Invalid input. 等错误页自动识别并继续回退\n· 国内线路优化：ghproxy / jsDelivr / 原始 raw 链接兜底\n· 弹窗全面改用 MIUIX（澎湃 OS）风格组件\n· 强制更新等信息整合进内容 JSON\n· 修复若干已知问题，提升流畅度\n\n本次更新为强制更新，请前往更新后继续使用。",
+  "size": 512,
+  "force": true,
+  "updateUrl": "https://gitee.com/你的账号/你的仓库/releases",
+  "actions": [
+    { "code": "SET_DIALOG_TITLE", "args": { "text": "发现新版本" } },
+    { "code": "SET_DIALOG_FORCE_TITLE", "args": { "text": "必须更新后才能使用" } },
+    { "code": "SET_DIALOG_POSITIVE", "args": { "text": "前往更新" } },
+    { "code": "SET_DIALOG_NEGATIVE", "args": { "text": "暂不更新" } },
+    { "code": "SET_FORCE_UPDATE", "args": { "enabled": true } },
+    { "code": "SET_SKIP_IF_LOCAL_GE", "args": { "enabled": false } },
+    { "code": "SET_SIZE_POLICY", "args": { "policy": "off" } },
+    { "code": "SET_SHOW_IGNORE", "args": { "enabled": false } },
+    { "code": "SET_URL_VERSION", "args": { "url": "https://gitee.com/你的账号/你的仓库/raw/main/ID" } },
+    { "code": "SET_URL_CONTENT", "args": { "url": "https://gitee.com/你的账号/你的仓库/raw/main/版本更新内容" } }
+  ]
+}
