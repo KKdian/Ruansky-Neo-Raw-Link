@@ -1,1 +1,27 @@
-11
+{
+  "saveEnabled": true,
+  "resetEnabled": true,
+  "sensitiveWords": [
+    "http://",
+    "https://",
+    "www.",
+    ".com",
+    ".cn",
+    ".net",
+    ".org",
+    ".vip",
+    ".cc",
+    ".xyz",
+    ".top",
+    ".io",
+    ".me",
+    ".info",
+    ".site",
+    ".online",
+    ".shop",
+    ".club",
+    ".link",
+    ".app",
+    ".dev"
+  ]
+}
