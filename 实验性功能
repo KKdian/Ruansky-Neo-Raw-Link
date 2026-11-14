@@ -1,1 +1,178 @@
-111
+{
+  "configVersion": 2,
+  "enabled": true,
+  "title": "实验性功能",
+  "subtitle": "抢先体验新功能，遇到问题欢迎反馈",
+  "notice": {
+    "text": "这里的功能正在逐步开放，部分功能可能暂时无法使用或随时调整。感谢你的理解与反馈。",
+    "style": "info"
+  },
+  "theme": {
+    "forceDark": -1,
+    "accent": "#FF0A84FF"
+  },
+  "cacheTtlMs": 300000,
+  "password": {
+    "value": "111",
+    "hint": "请输入访问密码",
+    "inputType": "number",
+    "version": 2,
+    "minLength": 1,
+    "maxRetry": 5,
+    "lockSeconds": 60,
+    "sessionTtlMs": 1800000,
+    "relockOnBackground": false,
+    "relockOnEntry": false,
+    "offlineAllow": true,
+    "offlinePassword": "111"
+  },
+  "features": [
+    {
+      "id": "guess_audit",
+      "section": "审核与排查",
+      "title": "待审帖子扫描",
+      "desc": "从最新一条往回翻，找出还在审核中的帖子",
+      "badge": "",
+      "target": "com.rtk.app.main.Home5Activity.GuessAuditScanActivity",
+      "action": "activity",
+      "targetMode": "direct",
+      "state": "enabled",
+      "needUnlock": true,
+      "disabledTip": "该功能暂未开放",
+      "order": 10
+    },
+    {
+      "id": "feature_list",
+      "section": "使用与说明",
+      "title": "全部功能",
+      "desc": "查看当前开放的功能与说明",
+      "badge": "",
+      "target": "com.rtk.app.main.Home5Activity.ExpFeaturePageActivity",
+      "action": "activity",
+      "targetMode": "direct",
+      "state": "enabled",
+      "needUnlock": true,
+      "order": 20,
+      "extras": {
+        "title": "全部功能",
+        "text": "以下是本页当前开放的功能，部分功能会分批开放，敬请期待。",
+        "show_list": "true"
+      }
+    },
+    {
+      "id": "new_post_card",
+      "section": "界面体验",
+      "title": "新版帖子卡片",
+      "desc": "抢先体验帖子列表的全新卡片样式",
+      "badge": "",
+      "target": "com.rtk.app.main.Home5Activity.ExpFeaturePageActivity",
+      "action": "activity",
+      "targetMode": "direct",
+      "state": "disabled_visible",
+      "needUnlock": true,
+      "disabledTip": "该功能即将开放，敬请期待",
+      "order": 30,
+      "extras": {
+        "title": "新版帖子卡片",
+        "text": "全新的帖子卡片样式正在打磨中，开放后可以在这里抢先体验。"
+      }
+    },
+    {
+      "id": "dark_enhance",
+      "section": "界面体验",
+      "title": "深色模式增强",
+      "desc": "更细腻的深色配色与过渡效果",
+      "badge": "",
+      "target": "com.rtk.app.main.Home5Activity.ExpFeaturePageActivity",
+      "action": "activity",
+      "targetMode": "direct",
+      "state": "hidden",
+      "needUnlock": true,
+      "disabledTip": "该功能暂未开放",
+      "order": 35
+    },
+    {
+      "id": "post_preview",
+      "section": "实用工具",
+      "title": "帖子快速预览",
+      "desc": "不离开列表，快速预览帖子的完整内容",
+      "badge": "抢先",
+      "target": "com.rtk.app.main.Home5Activity.ExpFeaturePageActivity",
+      "action": "proxy",
+      "targetMode": "proxy",
+      "state": "enabled",
+      "needUnlock": true,
+      "order": 40,
+      "extras": {
+        "title": "帖子快速预览",
+        "text": "在这里可以快速浏览帖子内容，省去反复进出详情页的步骤。"
+      }
+    },
+    {
+      "id": "feedback",
+      "section": "实用工具",
+      "title": "意见反馈",
+      "desc": "使用中遇到问题或有建议，欢迎告诉我们",
+      "badge": "",
+      "target": "",
+      "action": "none",
+      "state": "enabled",
+      "needUnlock": true,
+      "order": 50
+    },
+    {
+      "id": "copy_version",
+      "section": "实用工具",
+      "title": "复制当前版本号",
+      "desc": "反馈问题时附上版本号，方便我们定位",
+      "badge": "",
+      "target": "",
+      "action": "copy",
+      "state": "enabled",
+      "needUnlock": true,
+      "order": 60,
+      "extras": {
+        "text": "K点 4.4"
+      }
+    },
+    {
+      "id": "new_search",
+      "section": "灰度与到期",
+      "title": "新版搜索",
+      "desc": "更快、更准的站内搜索体验",
+      "badge": "抢先",
+      "target": "com.rtk.app.main.Home5Activity.ExpFeaturePageActivity",
+      "action": "activity",
+      "targetMode": "direct",
+      "state": "enabled",
+      "needUnlock": true,
+      "minVersionCode": 8740,
+      "maxVersionCode": 999999,
+      "expireAt": 0,
+      "allowModels": [],
+      "blockModels": [],
+      "order": 70,
+      "extras": {
+        "title": "新版搜索",
+        "text": "搜索结果与历史记录都已重新整理，欢迎体验并反馈。"
+      }
+    },
+    {
+      "id": "whats_new",
+      "section": "使用与说明",
+      "title": "更新说明",
+      "desc": "看看这一批功能都调整了什么",
+      "badge": "",
+      "target": "com.rtk.app.main.Home5Activity.ExpFeaturePageActivity",
+      "action": "activity",
+      "targetMode": "direct",
+      "state": "enabled",
+      "needUnlock": true,
+      "order": 80,
+      "extras": {
+        "title": "更新说明",
+        "text": "· 新增实验性功能入口\n· 支持按功能逐项开放或暂时关闭\n· 进入页面需要访问密码\n· 优化了返回与列表浏览体验"
+      }
+    }
+  ]
+}
