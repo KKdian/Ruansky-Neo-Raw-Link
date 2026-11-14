@@ -1,5 +1,5 @@
 {
-  "configVersion": 3,
+  "configVersion": 5,
   "enabled": true,
   "title": "实验性功能",
   "subtitle": "抢先体验新功能，遇到问题欢迎反馈",
@@ -16,7 +16,7 @@
     "value": "111",
     "hint": "请输入访问密码",
     "inputType": "number",
-    "version": 3,
+    "version": 5,
     "minLength": 1,
     "maxRetry": 5,
     "lockSeconds": 60,
@@ -40,6 +40,20 @@
       "needUnlock": true,
       "disabledTip": "该功能暂未开放",
       "order": 10
+    },
+    {
+      "id": "guess_up_audit",
+      "section": "审核与排查",
+      "title": "UP主审核中获取",
+      "desc": "获取指定 UP 主还在审核中的帖子",
+      "badge": "新",
+      "target": "com.rtk.app.main.Home5Activity.GuessUpAuditScanActivity",
+      "action": "activity",
+      "targetMode": "direct",
+      "state": "enabled",
+      "needUnlock": true,
+      "disabledTip": "该功能暂未开放",
+      "order": 20
     }
   ]
 }
